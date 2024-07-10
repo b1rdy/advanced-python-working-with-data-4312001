@@ -6,14 +6,14 @@ values = [0, 1, 2, 3, 4, 5]
 
 # TODO: any() can be used to see if any value in a sequence is True
 #for integers, any non zero values results to True
-#print(any(values))
+print(any(values))
 
 # TODO: all() will detect if all of the values in a sequence are True
 #for integers, 0 will return False
-#print(all(values))
+print(all(values))
 
 # TODO: sum() can be use to add all of the values in a sequence
-#print(sum(values))
+print(sum(values))
 
 # these utility functions don't have callbacks like min or max,
 # but we can use a generator for more fine control
@@ -30,8 +30,8 @@ if(any(quake["properties"]["felt"] is not None
     print("Yes")
 else:
     print("No")
-#print(any(quake["properties"]["felt"] is not None and quake["properties"]["felt"] > 25000
- #         for quake in data["features"]))
+print(any(quake["properties"]["felt"] is not None and quake["properties"]["felt"] > 25000
+         for quake in data["features"]))
 
 # TODO: how many quakes were felt by more than 500 people?
 print("Number of quakes felt by more than 500 people:")
